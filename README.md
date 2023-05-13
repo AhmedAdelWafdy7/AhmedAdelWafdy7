@@ -21,8 +21,11 @@ I'm an Embedded Systems Engineer who has a passion in learning  Embedded Systems
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=AhmedAdelWafdy7&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
-### 😂 Random Dev Meme
-<img src="https://rm.up.railway.app/" width="512px"/>
+ 
+  ![𝚐𝚒𝚝𝚑𝚞𝚋
+  𝚐𝚛𝚊𝚙𝚑](https://github-readme-activity-graph.cyclic.app/graph?username=NightBaRron1412&theme=react-dark&hide_border=true&area=true)
+  [![Code's github activity
+  graph](https://github.com/AhmedAdelWafdy7/AhmedAdelWafdy7/raw/output/github-contribution-grid-snake.svg)](https://skyline.github.com/AhmedAdelWafdy7)
 
 ---
 [![](https://visitcount.itsvg.in/api?id=AhmedAdelWafdy7&icon=2&color=1)](https://visitcount.itsvg.in)
