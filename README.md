@@ -25,6 +25,6 @@ I'm an Embedded Systems Engineer who has a passion in learning  Embedded Systems
 <img src="https://rm.up.railway.app/" width="512px"/>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=AhmedAdelWafdy7&icon=2&color=1)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=AhmedAdelWafdy7&label=Profile%20Views&color=0&pretty=false)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
