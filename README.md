@@ -65,8 +65,6 @@
 
 ![](https://raw.githubusercontent.com/AhmedAdelWafdy7/AhmedAdelWafdy7/main/github-metrics.svg)
 
-*(Generated automatically once a day by GitHub Actions — see setup below. This replaces the old trophy/contributor-stats widgets, which relied on unmaintained shared servers that frequently rate-limit or go down.)*
-
 ---
 
 [![](https://visitcount.itsvg.in/api?id=AhmedAdelWafdy7&label=Profile%20Views&color=0&pretty=false)](https://visitcount.itsvg.in)
