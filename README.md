@@ -3,6 +3,7 @@
 **Embedded Systems Engineer** · Software-Defined Vehicles, Linux internals, and in-vehicle infotainment
 📍 Cairo, Egypt
 
+
 ---
 
 ## 🚗 What I work on
@@ -11,6 +12,17 @@
 - **Automotive middleware:** SOME/IP, CAN Bus, ROS2, MQTT, D-Bus
 - **Embedded Linux:** Yocto/BitBake, kernel drivers, IPC (sockets, shared memory), systemd, sandboxing, Flatpak
 - **In-vehicle HMI:** Qt/QML, embedded Flutter
+
+## 🛠️ Featured Projects
+
+- **Yaquod – Robotaxi SDV Platform** — Xen · Yocto · Autoware · Jetson Orin
+  Consolidated autonomous-driving and infotainment workloads onto a single Jetson Orin SoC via Type-1 hypervisor domain isolation.
+- **AGL App Store** (GSoC 2025) — Toyota Embedded Flutter · Flatpak · MutualTLS
+  Production-ready app store for embedded Linux IVI systems with secure, sandboxed app distribution.
+- **SDV Platform** — Qt · Yocto · SOME/IP · ROS2 · MQTT
+  Distributed IVI system with OTA updates, cutting deployment time by 30% at 95% reliability.
+- **IVI System on Raspberry Pi 4** — C++ · Qt · SOME/IP · Yocto
+  AUTOSAR-compliant IPC system with a 25% boot-time reduction and 98%-accurate PDC obstacle detection.
 
 ---
 
@@ -49,13 +61,11 @@
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedAdelWafdy7&theme=midnight-purple&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-## 🏆 GitHub Trophies
+## 🏆 Metrics & Contributions
 
-![](https://github-profile-trophy.vercel.app/?username=AhmedAdelWafdy7&theme=algolia&no-frame=true&row=1&column=6)
+![](https://raw.githubusercontent.com/AhmedAdelWafdy7/AhmedAdelWafdy7/main/github-metrics.svg)
 
-## 🔝 Top Contributed Repos
-
-![](https://github-contributor-stats.vercel.app/api?username=AhmedAdelWafdy7&limit=5&theme=dark&combine_all_yearly_contributions=true)
+*(Generated automatically once a day by GitHub Actions — see setup below. This replaces the old trophy/contributor-stats widgets, which relied on unmaintained shared servers that frequently rate-limit or go down.)*
 
 ---
 
