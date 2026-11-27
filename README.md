@@ -1,52 +1,113 @@
-# Hey, I'm Ahmed Wafdy 👋
+<div align="center">
 
-**Embedded Systems Engineer** · Software-Defined Vehicles, embedded Linux and in-vehicle infotainment<br>
-📍 Cairo, Egypt
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=Ahmed%20Wafdy&fontColor=ffffff&fontSize=56&fontAlignY=36&desc=Embedded%20Systems%20Engineer%20%C2%B7%20Cairo%2C%20Egypt&descAlignY=56&descSize=18" width="100%" alt="Ahmed Wafdy" />
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-222222?logo=githubpages&logoColor=white)](https://ahmedadelwafdy7.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-wafdy-094567242)
-[![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/wafdev)
+<a href="https://github.com/flatpak-minimal/flutter_remote_manager"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=2EA8C6&center=true&vCenter=true&width=620&lines=Maintainer+of+the+AGL+App+Store;Flatpak+on+embedded+Linux;Xen+%2B+Autoware+on+Jetson+Orin;QNX+safety+guest+for+Autoware" alt="Maintainer of the AGL App Store" /></a>
 
----
+[![Portfolio](https://img.shields.io/badge/Portfolio-0f2027?style=for-the-badge&logo=githubpages&logoColor=white)](https://ahmedadelwafdy7.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-wafdy-094567242)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/wafdev)
 
-## 🚗 What I work on
+</div>
 
-- **Software-Defined Vehicles:** Xen on Jetson Orin Nano with separate domains for driving and infotainment, Autoware on Yocto, a QNX safety guest that takes over when Linux fails
-- **Embedded Linux:** Yocto/BitBake layers, Flatpak on embedded targets, first-boot services, data partitions, systemd
-- **Wayland and graphics:** Flutter embedder and compositor work (ivi-homescreen, ihs_wl_server), Weston capture protocols, GL/Vulkan on the Raspberry Pi 5 (V3D)
-- **Vehicle middleware:** ROS 2, Zenoh, DDS, gRPC, MQTT, SOME/IP, CAN, D-Bus
+## 🏪 AGL App Store
 
-## 🔧 Upstream contributions
+I maintain the **AGL App Store** in [flatpak-minimal](https://github.com/flatpak-minimal). It started as my GSoC 2025 project with Automotive Grade Linux and I've kept building it since. It covers the whole path from a Flatpak remote to an app launched on an AGL IVI screen: the store UI, the Dart API over libflatpak, the desktop portal and the Yocto layer that puts it in the image.
 
-| Project | What I did | Merged PRs |
-|---|---|---|
-| [meta-flatpak-minimal](https://github.com/flatpak-minimal/meta-flatpak-minimal/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | Flatpak runtime and guest isolation on AGL, first-boot services (Flathub remote, bundle install, rootfs expansion), per-user installs, SDK for flatpak-builder | 13 |
-| [xdg-desktop-portal-agl](https://github.com/flatpak-minimal/xdg-desktop-portal-agl/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | Rust portal backend for AGL: Screenshot and Settings over weston_capture, agl_screenshooter and wlr-screencopy | 4 |
-| [flatpak_dart](https://github.com/flatpak-minimal/flatpak_dart/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | Launch/stop and running state, AppStream metadata, portal permissions | 3 |
-| [autoware_universe](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [autoware_component_monitor](https://github.com/autowarefoundation/autoware_component_monitor/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | Build fixes for newer Boost and fmt | 7 |
-| [ivi-homescreen](https://github.com/toyota-connected/ivi-homescreen/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [ihs_wl_server](https://github.com/toyota-connected/ihs_wl_server/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [emb_cli](https://github.com/toyota-connected/emb_cli/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | GL compositor and platform view fixes on V3D, window reporting to Dart, building a Flatpak from one manifest | 6 |
-| [meta-flutter](https://github.com/meta-flutter/meta-flutter/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [meta-ros](https://github.com/ros/meta-ros/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [AGL sodev-demo-workspace-rpi](https://github.com/automotive-grade-linux/sodev-demo-workspace-rpi/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | flutter_tools on non-x86-64 hosts, native hook user defines, aarch64 build host for AGL Flutter | 5 |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-## 🛠️ Featured projects
+### [flutter_remote_manager](https://github.com/flatpak-minimal/flutter_remote_manager)
+![Owner](https://img.shields.io/badge/owner-2ea8c6?style=flat-square) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 
-- **[Yaquod](https://github.com/Yaquod): robotaxi SDV platform** · Xen · Yocto · Autoware · Zenoh · Jetson Orin
-  - Autoware and the Flutter IVI share one Jetson Orin Nano, each in its own Xen domain ([meta-tegra-xen](https://github.com/Yaquod/meta-tegra-xen)). The [autoware-agent](https://github.com/Yaquod/autoware-agent) runs trips, [iv-cloud-gateway](https://github.com/Yaquod/iv-cloud-gateway) links the car to the cloud over gRPC/MQTT, and [flutter-ivi](https://github.com/Yaquod/flutter-ivi) talks to the driving domain over Zenoh.
-- **[Autoware QNX Guardian](https://github.com/AhmedAdelWafdy7/autoware-qnx-guardian)** · QNX 8.0 · QNX Hypervisor · ROS 2 Jazzy · Raspberry Pi 5
-  - Autoware's safe-stop stack ported to QNX, supervising an Autoware Linux guest ([meta-autoware](https://github.com/AhmedAdelWafdy7/meta-autoware)) on the same SoC, and taking over when Linux fails.
-- **AGL App Store** (GSoC 2025) · Flutter · Flatpak · mutual TLS
-  - App store for AGL IVI images with sandboxed app installs ([flutter_remote_manager](https://github.com/flatpak-minimal/flutter_remote_manager)), built on the Flatpak work above.
-- **[Infotainment System on Raspberry Pi 4](https://github.com/AhmedAdelWafdy7/Infotainment-System)** · C++ · Qt · SOME/IP · CAN · Yocto
-  - Qt head unit with CAN and SOME/IP IPC, built with [meta-infotainment](https://github.com/AhmedAdelWafdy7/meta-infotainment).
+The store app: browse remotes, install and update apps, manage portal permissions. Runs under the AGL homescreen.
 
-## 💻 Tech stack
+</td>
+<td width="50%" valign="top">
 
-**Languages:** C · C++ · Rust · Dart · Python · Shell · BitBake<br>
-**Platforms:** Yocto · AGL · Xen · QNX · Jetson Orin · Raspberry Pi 4/5<br>
-**Frameworks and middleware:** Flutter (embedded) · Qt/QML · ROS 2 · Autoware · Zenoh · gRPC · SOME/IP · Flatpak<br>
-**Tooling:** CMake · Cargo · Docker · GitHub Actions · Git
+### [xdg-desktop-portal-agl](https://github.com/flatpak-minimal/xdg-desktop-portal-agl)
+![Author](https://img.shields.io/badge/author-2ea8c6?style=flat-square) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 
----
+Portal backend for AGL. Screenshot and Settings over `weston_capture_v1`, `agl_screenshooter` and wlr-screencopy.
 
-## 📊 GitHub metrics
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-![](https://raw.githubusercontent.com/AhmedAdelWafdy7/AhmedAdelWafdy7/main/github-metrics.svg)
+### [flatpak_dart](https://github.com/flatpak-minimal/flatpak_dart)
+![Maintainer](https://img.shields.io/badge/maintainer-2ea8c6?style=flat-square) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![C++23](https://img.shields.io/badge/C%2B%2B23-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+
+Typed Dart API over libflatpak through a C++23 FFI bridge. I added launch/stop, running state, AppStream metadata and portal permissions.
+
+</td>
+<td width="50%" valign="top">
+
+### [meta-flatpak-minimal](https://github.com/flatpak-minimal/meta-flatpak-minimal)
+![Maintainer](https://img.shields.io/badge/maintainer-2ea8c6?style=flat-square) ![Yocto](https://img.shields.io/badge/Yocto-0f2027?style=flat-square&logo=linux&logoColor=white)
+
+The Yocto layer that ships it all. Flatpak isolation on AGL, first-boot Flathub setup, per-user installs, data partition handling.
+
+</td>
+</tr>
+</table>
+
+Store work regularly needs fixes in the projects underneath it, so I send them upstream:
+
+[![toyota-connected](https://img.shields.io/badge/toyota--connected-ivi--homescreen%20%C2%B7%20ihs__wl__server%20%C2%B7%20emb__cli-203a43?style=flat-square)](https://github.com/search?q=author%3AAhmedAdelWafdy7+is%3Apr+is%3Amerged+org%3Atoyota-connected&type=pullrequests)
+[![meta-flutter](https://img.shields.io/badge/meta--flutter-meta--flutter-203a43?style=flat-square)](https://github.com/meta-flutter/meta-flutter/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged)
+[![AGL](https://img.shields.io/badge/AGL-sodev--demo--workspace--rpi-203a43?style=flat-square)](https://github.com/automotive-grade-linux/sodev-demo-workspace-rpi/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged)
+
+## 🚗 Software-Defined Vehicles
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Yaquod](https://github.com/Yaquod)
+![Xen](https://img.shields.io/badge/Xen-2c5364?style=flat-square) ![Jetson Orin](https://img.shields.io/badge/Jetson_Orin-76B900?style=flat-square&logo=nvidia&logoColor=white) ![Zenoh](https://img.shields.io/badge/Zenoh-2c5364?style=flat-square)
+
+Robotaxi platform. Autoware and a Flutter IVI share one Jetson Orin Nano, each in its own Xen domain ([meta-tegra-xen](https://github.com/Yaquod/meta-tegra-xen)), with a trip agent, a cloud gateway over gRPC/MQTT and Zenoh between domains.
+
+</td>
+<td width="50%" valign="top">
+
+### [Autoware QNX Guardian](https://github.com/AhmedAdelWafdy7/autoware-qnx-guardian)
+![QNX 8.0](https://img.shields.io/badge/QNX_8.0-2c5364?style=flat-square) ![ROS 2 Jazzy](https://img.shields.io/badge/ROS_2_Jazzy-22314E?style=flat-square&logo=ros&logoColor=white) ![Raspberry Pi 5](https://img.shields.io/badge/Raspberry_Pi_5-C51A4A?style=flat-square&logo=raspberrypi&logoColor=white)
+
+Autoware's safe-stop stack on QNX, supervising an Autoware Linux guest ([meta-autoware](https://github.com/AhmedAdelWafdy7/meta-autoware)) on the same SoC, so the car can still stop safely if Linux crashes.
+
+</td>
+</tr>
+</table>
+
+Also upstream in [Autoware](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) and [meta-ros](https://github.com/ros/meta-ros/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged). Earlier work: an [infotainment system on Raspberry Pi 4](https://github.com/AhmedAdelWafdy7/Infotainment-System) with Qt, CAN and SOME/IP.
+
+## 🧰 Tech stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=c,cpp,rust,dart,python,bash,flutter,qt,linux,raspberrypi,ros,cmake,docker,githubactions,git&perline=15" alt="C, C++, Rust, Dart, Python, Bash, Flutter, Qt, Linux, Raspberry Pi, ROS, CMake, Docker, GitHub Actions, Git" />
+
+![Yocto](https://img.shields.io/badge/Yocto-0f2027?style=for-the-badge&logo=linux&logoColor=white)
+![AGL](https://img.shields.io/badge/AGL-203a43?style=for-the-badge)
+![Flatpak](https://img.shields.io/badge/Flatpak-4A90D9?style=for-the-badge&logo=flatpak&logoColor=white)
+![Wayland](https://img.shields.io/badge/Wayland-FFBC00?style=for-the-badge&logo=wayland&logoColor=black)
+![Xen](https://img.shields.io/badge/Xen-2c5364?style=for-the-badge)
+![QNX](https://img.shields.io/badge/QNX-2c5364?style=for-the-badge&logo=blackberry&logoColor=white)
+![Autoware](https://img.shields.io/badge/Autoware-203a43?style=for-the-badge)
+![Zenoh](https://img.shields.io/badge/Zenoh-0f2027?style=for-the-badge)
+![SOME/IP](https://img.shields.io/badge/SOME%2FIP-203a43?style=for-the-badge)
+
+</div>
+
+<details>
+<summary>📊 GitHub metrics</summary>
+<br>
+
+![GitHub metrics](https://raw.githubusercontent.com/AhmedAdelWafdy7/AhmedAdelWafdy7/main/github-metrics.svg)
+
+</details>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:2c5364,50:203a43,100:0f2027&section=footer" width="100%" alt="" />
