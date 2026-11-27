@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=Ahmed%20Wafdy&fontColor=ffffff&fontSize=56&fontAlignY=36&desc=Embedded%20Systems%20Engineer%20%C2%B7%20Cairo%2C%20Egypt&descAlignY=56&descSize=18" width="100%" alt="Ahmed Wafdy" />
 
-<a href="https://github.com/flatpak-minimal/flutter_remote_manager"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=2EA8C6&center=true&vCenter=true&width=620&lines=Maintainer+of+the+AGL+App+Store;Flatpak+on+embedded+Linux;Xen+%2B+Autoware+on+Jetson+Orin;QNX+safety+guest+for+Autoware" alt="Maintainer of the AGL App Store" /></a>
+<a href="https://github.com/flatpak-minimal/flutter_remote_manager"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=2EA8C6&center=true&vCenter=true&width=620&lines=Maintainer+of+the+AGL+App+Store;Maintainer+of+meta-autoware+for+Yocto;Flatpak+on+embedded+Linux;Xen+%2B+Autoware+on+Jetson+Orin;QNX+safety+guest+for+Autoware" alt="Maintainer of the AGL App Store" /></a>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-0f2027?style=for-the-badge&logo=githubpages&logoColor=white)](https://ahmedadelwafdy7.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-wafdy-094567242)
@@ -77,6 +77,16 @@ Robotaxi platform. Autoware and a Flutter IVI share one Jetson Orin Nano, each i
 ![QNX 8.0](https://img.shields.io/badge/QNX_8.0-2c5364?style=flat-square) ![ROS 2 Jazzy](https://img.shields.io/badge/ROS_2_Jazzy-22314E?style=flat-square&logo=ros&logoColor=white) ![Raspberry Pi 5](https://img.shields.io/badge/Raspberry_Pi_5-C51A4A?style=flat-square&logo=raspberrypi&logoColor=white)
 
 Autoware's safe-stop stack on QNX, supervising an Autoware Linux guest on the same SoC, so the car can still stop safely if Linux crashes.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### [meta-autoware](https://layers.openembedded.org/layerindex/branch/master/layer/meta-autoware/)
+![Maintainer](https://img.shields.io/badge/maintainer-2ea8c6?style=flat-square) ![OpenEmbedded Layer Index](https://img.shields.io/badge/OpenEmbedded_Layer_Index-listed-203a43?style=flat-square) ![Yocto](https://img.shields.io/badge/Yocto-0f2027?style=flat-square&logo=linux&logoColor=white) ![ROS 2](https://img.shields.io/badge/ROS_2-22314E?style=flat-square&logo=ros&logoColor=white)
+
+The Yocto layer that builds the Autoware autonomous driving stack on ROS 2, listed in the OpenEmbedded Layer Index. It also builds the Linux guest that the QNX Guardian supervises.
 
 </td>
 </tr>
