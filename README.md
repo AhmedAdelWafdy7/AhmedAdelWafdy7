@@ -18,25 +18,25 @@ I maintain the **AGL App Store** in [flatpak-minimal](https://github.com/flatpak
 <tr>
 <td width="50%" valign="top">
 
-### [flutter_remote_manager](https://github.com/flatpak-minimal/flutter_remote_manager)
+### [Store app](https://github.com/flatpak-minimal/flutter_remote_manager)
 ![Owner](https://img.shields.io/badge/owner-2ea8c6?style=flat-square) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 
-The store app: browse remotes, install and update apps, manage portal permissions. Runs under the AGL homescreen.
+Browse remotes, install and update apps, manage portal permissions. Runs under the AGL homescreen.
 
 </td>
 <td width="50%" valign="top">
 
-### [xdg-desktop-portal-agl](https://github.com/flatpak-minimal/xdg-desktop-portal-agl)
+### [Desktop portal for AGL](https://github.com/flatpak-minimal/xdg-desktop-portal-agl)
 ![Author](https://img.shields.io/badge/author-2ea8c6?style=flat-square) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 
-Portal backend for AGL. Screenshot and Settings over `weston_capture_v1`, `agl_screenshooter` and wlr-screencopy.
+Rust portal backend. Screenshot and Settings over `weston_capture_v1`, `agl_screenshooter` and wlr-screencopy.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### [flatpak_dart](https://github.com/flatpak-minimal/flatpak_dart)
+### [Flatpak API for Dart](https://github.com/flatpak-minimal/flatpak_dart)
 ![Maintainer](https://img.shields.io/badge/maintainer-2ea8c6?style=flat-square) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![C++23](https://img.shields.io/badge/C%2B%2B23-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
 Typed Dart API over libflatpak through a C++23 FFI bridge. I added launch/stop, running state, AppStream metadata and portal permissions.
@@ -44,10 +44,10 @@ Typed Dart API over libflatpak through a C++23 FFI bridge. I added launch/stop, 
 </td>
 <td width="50%" valign="top">
 
-### [meta-flatpak-minimal](https://github.com/flatpak-minimal/meta-flatpak-minimal)
+### [Yocto integration](https://github.com/flatpak-minimal/meta-flatpak-minimal)
 ![Maintainer](https://img.shields.io/badge/maintainer-2ea8c6?style=flat-square) ![Yocto](https://img.shields.io/badge/Yocto-0f2027?style=flat-square&logo=linux&logoColor=white)
 
-The Yocto layer that ships it all. Flatpak isolation on AGL, first-boot Flathub setup, per-user installs, data partition handling.
+The layer that ships it all into the image. Flatpak isolation on AGL, first-boot Flathub setup, per-user installs, data partition handling.
 
 </td>
 </tr>
@@ -55,9 +55,9 @@ The Yocto layer that ships it all. Flatpak isolation on AGL, first-boot Flathub 
 
 Store work regularly needs fixes in the projects underneath it, so I send them upstream:
 
-[![toyota-connected](https://img.shields.io/badge/toyota--connected-ivi--homescreen%20%C2%B7%20ihs__wl__server%20%C2%B7%20emb__cli-203a43?style=flat-square)](https://github.com/search?q=author%3AAhmedAdelWafdy7+is%3Apr+is%3Amerged+org%3Atoyota-connected&type=pullrequests)
-[![meta-flutter](https://img.shields.io/badge/meta--flutter-meta--flutter-203a43?style=flat-square)](https://github.com/meta-flutter/meta-flutter/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged)
-[![AGL](https://img.shields.io/badge/AGL-sodev--demo--workspace--rpi-203a43?style=flat-square)](https://github.com/automotive-grade-linux/sodev-demo-workspace-rpi/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged)
+[![Toyota Connected](https://img.shields.io/badge/Toyota_Connected-embedded_Flutter_on_Wayland-203a43?style=flat-square)](https://github.com/search?q=author%3AAhmedAdelWafdy7+is%3Apr+is%3Amerged+org%3Atoyota-connected&type=pullrequests)
+[![Flutter on Yocto](https://img.shields.io/badge/Flutter-on_Yocto-203a43?style=flat-square)](https://github.com/meta-flutter/meta-flutter/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged)
+[![AGL](https://img.shields.io/badge/AGL-Flutter_demo_workspace-203a43?style=flat-square)](https://github.com/automotive-grade-linux/sodev-demo-workspace-rpi/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged)
 
 ## 🚗 Software-Defined Vehicles
 
@@ -68,7 +68,7 @@ Store work regularly needs fixes in the projects underneath it, so I send them u
 ### [Yaquod](https://github.com/Yaquod)
 ![Xen](https://img.shields.io/badge/Xen-2c5364?style=flat-square) ![Jetson Orin](https://img.shields.io/badge/Jetson_Orin-76B900?style=flat-square&logo=nvidia&logoColor=white) ![Zenoh](https://img.shields.io/badge/Zenoh-2c5364?style=flat-square)
 
-Robotaxi platform. Autoware and a Flutter IVI share one Jetson Orin Nano, each in its own Xen domain ([meta-tegra-xen](https://github.com/Yaquod/meta-tegra-xen)), with a trip agent, a cloud gateway over gRPC/MQTT and Zenoh between domains.
+Robotaxi platform. Autoware and a Flutter IVI share one Jetson Orin Nano, each in its own Xen domain, with a trip agent, a cloud gateway over gRPC/MQTT and Zenoh between domains.
 
 </td>
 <td width="50%" valign="top">
@@ -76,13 +76,13 @@ Robotaxi platform. Autoware and a Flutter IVI share one Jetson Orin Nano, each i
 ### [Autoware QNX Guardian](https://github.com/AhmedAdelWafdy7/autoware-qnx-guardian)
 ![QNX 8.0](https://img.shields.io/badge/QNX_8.0-2c5364?style=flat-square) ![ROS 2 Jazzy](https://img.shields.io/badge/ROS_2_Jazzy-22314E?style=flat-square&logo=ros&logoColor=white) ![Raspberry Pi 5](https://img.shields.io/badge/Raspberry_Pi_5-C51A4A?style=flat-square&logo=raspberrypi&logoColor=white)
 
-Autoware's safe-stop stack on QNX, supervising an Autoware Linux guest ([meta-autoware](https://github.com/AhmedAdelWafdy7/meta-autoware)) on the same SoC, so the car can still stop safely if Linux crashes.
+Autoware's safe-stop stack on QNX, supervising an Autoware Linux guest on the same SoC, so the car can still stop safely if Linux crashes.
 
 </td>
 </tr>
 </table>
 
-Also upstream in [Autoware](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) and [meta-ros](https://github.com/ros/meta-ros/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged). Earlier work: an [infotainment system on Raspberry Pi 4](https://github.com/AhmedAdelWafdy7/Infotainment-System) with Qt, CAN and SOME/IP.
+Also upstream in [Autoware](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) and [ROS on Yocto](https://github.com/ros/meta-ros/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged). Earlier work: an [infotainment system on Raspberry Pi 4](https://github.com/AhmedAdelWafdy7/Infotainment-System) with Qt, CAN and SOME/IP.
 
 ## 🧰 Tech stack
 
