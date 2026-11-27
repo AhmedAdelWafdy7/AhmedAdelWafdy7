@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=Ahmed%20Wafdy&fontColor=ffffff&fontSize=56&fontAlignY=36&desc=Embedded%20Systems%20Engineer%20%C2%B7%20Cairo%2C%20Egypt&descAlignY=56&descSize=18" width="100%" alt="Ahmed Wafdy" />
 
-<a href="https://github.com/flatpak-minimal/flutter_remote_manager"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=2EA8C6&center=true&vCenter=true&width=620&lines=Maintainer+of+the+AGL+App+Store;Maintainer+of+meta-autoware+for+Yocto;Flatpak+on+embedded+Linux;Xen+%2B+Autoware+on+Jetson+Orin;QNX+safety+guest+for+Autoware" alt="Maintainer of the AGL App Store" /></a>
+<a href="https://github.com/flatpak-minimal/flutter_remote_manager"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=2EA8C6&center=true&vCenter=true&width=620&lines=Working+on+the+AGL+App+Store;Maintainer+of+meta-autoware+for+Yocto;Flatpak+on+embedded+Linux;Xen+%2B+Autoware+on+Jetson+Orin;QNX+safety+guest+for+Autoware" alt="Working on the AGL App Store" /></a>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-0f2027?style=for-the-badge&logo=githubpages&logoColor=white)](https://ahmedadelwafdy7.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-wafdy-094567242)
@@ -12,14 +12,14 @@
 
 ## 🏪 AGL App Store
 
-I maintain the **AGL App Store** in [flatpak-minimal](https://github.com/flatpak-minimal). It started as my GSoC 2025 project with Automotive Grade Linux and I've kept building it since. It covers the whole path from a Flatpak remote to an app launched on an AGL IVI screen: the store UI, the Dart API over libflatpak, the desktop portal and the Yocto layer that puts it in the image.
+The **AGL App Store** started as my GSoC 2025 project with Automotive Grade Linux, and I still work on it with the [flatpak-minimal](https://github.com/flatpak-minimal) team. It covers the whole path from a Flatpak remote to an app launched on an AGL IVI screen: the store UI, the Dart API over libflatpak, the desktop portal and the Yocto layer that puts it in the image.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### [Store app](https://github.com/flatpak-minimal/flutter_remote_manager)
-![Owner](https://img.shields.io/badge/owner-2ea8c6?style=flat-square) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 
 Browse remotes, install and update apps, manage portal permissions. Runs under the AGL homescreen.
 
@@ -27,7 +27,7 @@ Browse remotes, install and update apps, manage portal permissions. Runs under t
 <td width="50%" valign="top">
 
 ### [Desktop portal for AGL](https://github.com/flatpak-minimal/xdg-desktop-portal-agl)
-![Author](https://img.shields.io/badge/author-2ea8c6?style=flat-square) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 
 Rust portal backend. Screenshot and Settings over `weston_capture_v1`, `agl_screenshooter` and wlr-screencopy.
 
@@ -37,7 +37,7 @@ Rust portal backend. Screenshot and Settings over `weston_capture_v1`, `agl_scre
 <td width="50%" valign="top">
 
 ### [Flatpak API for Dart](https://github.com/flatpak-minimal/flatpak_dart)
-![Maintainer](https://img.shields.io/badge/maintainer-2ea8c6?style=flat-square) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![C++23](https://img.shields.io/badge/C%2B%2B23-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![C++23](https://img.shields.io/badge/C%2B%2B23-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
 Typed Dart API over libflatpak through a C++23 FFI bridge. I added launch/stop, running state, AppStream metadata and portal permissions.
 
@@ -45,7 +45,7 @@ Typed Dart API over libflatpak through a C++23 FFI bridge. I added launch/stop, 
 <td width="50%" valign="top">
 
 ### [Yocto integration](https://github.com/flatpak-minimal/meta-flatpak-minimal)
-![Maintainer](https://img.shields.io/badge/maintainer-2ea8c6?style=flat-square) ![Yocto](https://img.shields.io/badge/Yocto-0f2027?style=flat-square&logo=linux&logoColor=white)
+![Yocto](https://img.shields.io/badge/Yocto-0f2027?style=flat-square&logo=linux&logoColor=white)
 
 The layer that ships it all into the image. Flatpak isolation on AGL, first-boot Flathub setup, per-user installs, data partition handling.
 
@@ -53,7 +53,7 @@ The layer that ships it all into the image. Flatpak isolation on AGL, first-boot
 </tr>
 </table>
 
-Store work regularly needs fixes in the projects underneath it, so I send them upstream:
+Store work sometimes needs fixes in the projects it builds on, and I send those upstream:
 
 [![Toyota Connected](https://img.shields.io/badge/Toyota_Connected-embedded_Flutter_on_Wayland-203a43?style=flat-square)](https://github.com/search?q=author%3AAhmedAdelWafdy7+is%3Apr+is%3Amerged+org%3Atoyota-connected&type=pullrequests)
 [![Flutter on Yocto](https://img.shields.io/badge/Flutter-on_Yocto-203a43?style=flat-square)](https://github.com/meta-flutter/meta-flutter/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged)
