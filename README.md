@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=Ahmed%20Wafdy&fontColor=ffffff&fontSize=56&fontAlignY=36&desc=Embedded%20Systems%20Engineer%20%C2%B7%20Cairo%2C%20Egypt&descAlignY=56&descSize=18" width="100%" alt="Ahmed Wafdy" />
 
-<a href="https://github.com/flatpak-minimal/flutter_remote_manager"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=2EA8C6&center=true&vCenter=true&width=620&lines=Working+on+the+AGL+App+Store;Maintainer+of+meta-autoware+for+Yocto;Flatpak+on+embedded+Linux;Xen+%2B+Autoware+on+Jetson+Orin;QNX+safety+guest+for+Autoware" alt="Working on the AGL App Store" /></a>
+<a href="https://github.com/flatpak-minimal"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=2EA8C6&center=true&vCenter=true&width=620&lines=Working+on+the+AGL+App+Store;Maintainer+of+meta-autoware+for+Yocto;Flatpak+on+embedded+Linux;Xen+%2B+Autoware+on+Jetson+Orin;QNX+safety+guest+for+Autoware" alt="Working on the AGL App Store" /></a>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-0f2027?style=for-the-badge&logo=githubpages&logoColor=white)](https://ahmedadelwafdy7.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-wafdy-094567242)
@@ -12,16 +12,16 @@
 
 ## 🏪 AGL App Store
 
-The **AGL App Store** started as my GSoC 2025 project with Automotive Grade Linux, and I still work on it with the [flatpak-minimal](https://github.com/flatpak-minimal) team. It covers the whole path from a Flatpak remote to an app launched on an AGL IVI screen: the store UI, the Dart API over libflatpak, the desktop portal and the Yocto layer that puts it in the image.
+The **AGL App Store** started as my GSoC 2025 project with Automotive Grade Linux, and I still work on it with the [flatpak-minimal](https://github.com/flatpak-minimal) team. Most of the work is underneath the store's Flutter UI: the Dart API over libflatpak, the desktop portal, and the Yocto layer that puts Flatpak in the AGL image.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### [Store app](https://github.com/flatpak-minimal/flutter_remote_manager)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+### [Flatpak API for Dart](https://github.com/flatpak-minimal/flatpak_dart)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![C++23](https://img.shields.io/badge/C%2B%2B23-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
-Browse remotes, install and update apps, manage portal permissions. Runs under the AGL homescreen.
+Typed Dart API over libflatpak through a C++23 FFI bridge. I added launch/stop, running state, AppStream metadata and portal permissions.
 
 </td>
 <td width="50%" valign="top">
@@ -34,15 +34,7 @@ Rust portal backend. Screenshot and Settings over `weston_capture_v1`, `agl_scre
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### [Flatpak API for Dart](https://github.com/flatpak-minimal/flatpak_dart)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![C++23](https://img.shields.io/badge/C%2B%2B23-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-
-Typed Dart API over libflatpak through a C++23 FFI bridge. I added launch/stop, running state, AppStream metadata and portal permissions.
-
-</td>
-<td width="50%" valign="top">
+<td colspan="2" valign="top">
 
 ### [Yocto integration](https://github.com/flatpak-minimal/meta-flatpak-minimal)
 ![Yocto](https://img.shields.io/badge/Yocto-0f2027?style=flat-square&logo=linux&logoColor=white)
