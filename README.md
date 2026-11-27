@@ -1,70 +1,52 @@
 # Hey, I'm Ahmed Wafdy 👋
 
-**Embedded Systems Engineer** · Software-Defined Vehicles, Linux internals, and in-vehicle infotainment
+**Embedded Systems Engineer** · Software-Defined Vehicles, embedded Linux and in-vehicle infotainment<br>
 📍 Cairo, Egypt
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-222222?logo=githubpages&logoColor=white)](https://ahmedadelwafdy7.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-wafdy-094567242)
+[![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/wafdev)
 
 ---
 
 ## 🚗 What I work on
 
-- **Software-Defined Vehicles (SDV):** Xen hypervisor bring-up, mixed-criticality workload isolation on NVIDIA Jetson Orin, Autoware autonomy stack integration
-- **Automotive middleware:** SOME/IP, CAN Bus, ROS2, MQTT, D-Bus
-- **Embedded Linux:** Yocto/BitBake, kernel drivers, IPC (sockets, shared memory), systemd, sandboxing, Flatpak
-- **In-vehicle HMI:** Qt/QML, embedded Flutter
+- **Software-Defined Vehicles:** Xen on Jetson Orin Nano with separate domains for driving and infotainment, Autoware on Yocto, a QNX safety guest that takes over when Linux fails
+- **Embedded Linux:** Yocto/BitBake layers, Flatpak on embedded targets, first-boot services, data partitions, systemd
+- **Wayland and graphics:** Flutter embedder and compositor work (ivi-homescreen, ihs_wl_server), Weston capture protocols, GL/Vulkan on the Raspberry Pi 5 (V3D)
+- **Vehicle middleware:** ROS 2, Zenoh, DDS, gRPC, MQTT, SOME/IP, CAN, D-Bus
 
-## 🛠️ Featured Projects
+## 🔧 Upstream contributions
 
-- **Yaquod – Robotaxi SDV Platform** — Xen · Yocto · Autoware · Jetson Orin
-  Consolidated autonomous-driving and infotainment workloads onto a single Jetson Orin SoC via Type-1 hypervisor domain isolation.
-- **AGL App Store** (GSoC 2025) — Toyota Embedded Flutter · Flatpak · MutualTLS
-  Production-ready app store for embedded Linux IVI systems with secure, sandboxed app distribution.
-- **SDV Platform** — Qt · Yocto · SOME/IP · ROS2 · MQTT
-  Distributed IVI system with OTA updates, cutting deployment time by 30% at 95% reliability.
-- **IVI System on Raspberry Pi 4** — C++ · Qt · SOME/IP · Yocto
-  AUTOSAR-compliant IPC system with a 25% boot-time reduction and 98%-accurate PDC obstacle detection.
+| Project | What I did | Merged PRs |
+|---|---|---|
+| [meta-flatpak-minimal](https://github.com/flatpak-minimal/meta-flatpak-minimal/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | Flatpak runtime and guest isolation on AGL, first-boot services (Flathub remote, bundle install, rootfs expansion), per-user installs, SDK for flatpak-builder | 13 |
+| [xdg-desktop-portal-agl](https://github.com/flatpak-minimal/xdg-desktop-portal-agl/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | Rust portal backend for AGL: Screenshot and Settings over weston_capture, agl_screenshooter and wlr-screencopy | 4 |
+| [flatpak_dart](https://github.com/flatpak-minimal/flatpak_dart/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | Launch/stop and running state, AppStream metadata, portal permissions | 3 |
+| [autoware_universe](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [autoware_component_monitor](https://github.com/autowarefoundation/autoware_component_monitor/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | Build fixes for newer Boost and fmt | 7 |
+| [ivi-homescreen](https://github.com/toyota-connected/ivi-homescreen/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [ihs_wl_server](https://github.com/toyota-connected/ihs_wl_server/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [emb_cli](https://github.com/toyota-connected/emb_cli/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | GL compositor and platform view fixes on V3D, window reporting to Dart, building a Flatpak from one manifest | 6 |
+| [meta-flutter](https://github.com/meta-flutter/meta-flutter/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [meta-ros](https://github.com/ros/meta-ros/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) · [AGL sodev-demo-workspace-rpi](https://github.com/automotive-grade-linux/sodev-demo-workspace-rpi/pulls?q=is%3Apr+author%3AAhmedAdelWafdy7+is%3Amerged) | flutter_tools on non-x86-64 hosts, native hook user defines, aarch64 build host for AGL Flutter | 5 |
 
----
+## 🛠️ Featured projects
 
-## 🌐 Socials
+- **[Yaquod](https://github.com/Yaquod): robotaxi SDV platform** · Xen · Yocto · Autoware · Zenoh · Jetson Orin
+  - Autoware and the Flutter IVI share one Jetson Orin Nano, each in its own Xen domain ([meta-tegra-xen](https://github.com/Yaquod/meta-tegra-xen)). The [autoware-agent](https://github.com/Yaquod/autoware-agent) runs trips, [iv-cloud-gateway](https://github.com/Yaquod/iv-cloud-gateway) links the car to the cloud over gRPC/MQTT, and [flutter-ivi](https://github.com/Yaquod/flutter-ivi) talks to the driving domain over Zenoh.
+- **[Autoware QNX Guardian](https://github.com/AhmedAdelWafdy7/autoware-qnx-guardian)** · QNX 8.0 · QNX Hypervisor · ROS 2 Jazzy · Raspberry Pi 5
+  - Autoware's safe-stop stack ported to QNX, supervising an Autoware Linux guest ([meta-autoware](https://github.com/AhmedAdelWafdy7/meta-autoware)) on the same SoC, and taking over when Linux fails.
+- **AGL App Store** (GSoC 2025) · Flutter · Flatpak · mutual TLS
+  - App store for AGL IVI images with sandboxed app installs ([flutter_remote_manager](https://github.com/flatpak-minimal/flutter_remote_manager)), built on the Flatpak work above.
+- **[Infotainment System on Raspberry Pi 4](https://github.com/AhmedAdelWafdy7/Infotainment-System)** · C++ · Qt · SOME/IP · CAN · Yocto
+  - Qt head unit with CAN and SOME/IP IPC, built with [meta-infotainment](https://github.com/AhmedAdelWafdy7/meta-infotainment).
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-wafdy-094567242)
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://x.com/wafdev)
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/ahmedadelwafdy)
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/ahmedadel.wafdy.9)
+## 💻 Tech stack
 
-## 💻 Tech Stack
-
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Yocto](https://img.shields.io/badge/Yocto_Project-000000?style=for-the-badge&logo=linux&logoColor=white)
-![Qt](https://img.shields.io/badge/Qt-%2341CD52.svg?style=for-the-badge&logo=Qt&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
-![ROS2](https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white)
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
-![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
+**Languages:** C · C++ · Rust · Dart · Python · Shell · BitBake<br>
+**Platforms:** Yocto · AGL · Xen · QNX · Jetson Orin · Raspberry Pi 4/5<br>
+**Frameworks and middleware:** Flutter (embedded) · Qt/QML · ROS 2 · Autoware · Zenoh · gRPC · SOME/IP · Flatpak<br>
+**Tooling:** CMake · Cargo · Docker · GitHub Actions · Git
 
 ---
 
-## 📊 GitHub Stats
-
-![](https://github-readme-stats.vercel.app/api?username=AhmedAdelWafdy7&theme=midnight-purple&hide_border=false&include_all_commits=true&count_private=true)
-![](https://streak-stats.demolab.com/?user=AhmedAdelWafdy7&theme=midnight-purple&hide_border=false)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedAdelWafdy7&theme=midnight-purple&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
-## 🏆 Metrics & Contributions
+## 📊 GitHub metrics
 
 ![](https://raw.githubusercontent.com/AhmedAdelWafdy7/AhmedAdelWafdy7/main/github-metrics.svg)
-
----
-
-[![](https://visitcount.itsvg.in/api?id=AhmedAdelWafdy7&label=Profile%20Views&color=0&pretty=false)](https://visitcount.itsvg.in)
